@@ -1,3 +1,4 @@
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 
@@ -6,6 +7,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import * as Styled from './styles'
 
 export default function Apresentation() {
+  const smallWidth = useMediaQuery('(max-width: 700px)')
+
   return (
     <Styled.Content>
       <span></span>
@@ -16,7 +19,8 @@ export default function Apresentation() {
 
           color: 'black',
           fontWeight: 'bold',
-          letterSpacing: '3px'
+          letterSpacing: '3px',
+          textAlign: smallWidth ? 'center' : 'left'
         }}>O melhor da moda streetwear perto de você!</Typography>
 
         <IconButton aria-label='ver mais'>

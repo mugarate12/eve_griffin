@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
 
   padding-left: 50px;
   padding-right: 50px;
@@ -20,6 +21,13 @@ export const Container = styled.div`
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #908686;
+
+  @media (max-width: 700px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    grid-template-columns: 1fr;
+  }
 `
 
 export const TextAlignContainer = styled.div`

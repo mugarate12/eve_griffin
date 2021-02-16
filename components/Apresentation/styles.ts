@@ -9,6 +9,10 @@ export const Content = styled.div`
   align-content: center;
   justify-content: center;
   justify-items: center;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const CenterElementsContainer = styled.div`
@@ -16,4 +20,8 @@ export const CenterElementsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 700px) {
+    width: 80%;
+  }
 `
