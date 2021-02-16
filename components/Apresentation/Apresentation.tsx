@@ -4,16 +4,16 @@ import IconButton from '@material-ui/core/IconButton'
 
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-import * as Styled from './styles'
+import styles from './Apresentation.module.css'
 
 export default function Apresentation() {
   const smallWidth = useMediaQuery('(max-width: 700px)')
 
   return (
-    <Styled.Content>
+    <div className={styles.content}>
       <span></span>
       
-      <Styled.CenterElementsContainer>
+      <div className={styles.centerElementsContainer}>
         <Typography variant='h3' component='h1' style={{
           width: '90%',
 
@@ -26,7 +26,7 @@ export default function Apresentation() {
         <IconButton aria-label='ver mais'>
           <ExpandMoreIcon fontSize='large'/>
         </IconButton>
-      </Styled.CenterElementsContainer>
-    </Styled.Content>
+      </div>
+    </div>
   )
 }

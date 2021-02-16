@@ -1,13 +1,9 @@
-import * as Styled from './styles'
+import styles from './ContainerImage.module.css'
 
-interface Props {
-  imgURL: string;
-}
-
-export default function ContainerImage({ imgURL } : Props) {
+export default function ContainerImage() {
   return (
-    <Styled.Div
-      imgURL={imgURL}
-    ></Styled.Div>
+    <div
+      className={styles.container}
+    ></div>
   );
 }

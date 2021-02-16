@@ -20,7 +20,7 @@ export default function Home() {
 
       <Header />
 
-      <ContainerImage imgURL='/img/image_example_2.jpg'/>
+      <ContainerImage />
 
       <Apresentation />
 

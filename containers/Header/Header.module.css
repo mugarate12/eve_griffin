@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-
-export const Container = styled.header`
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,4 +12,4 @@ export const Container = styled.header`
 
   background: rgb(223,223,201);
   background: linear-gradient(90deg, rgba(223,223,201,0.7) 0%, rgba(226,226,202,0.7) 37%, rgba(221,221,141,0.7) 100%);
-`
+}
